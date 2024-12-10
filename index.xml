@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>Alwan&#39;s Blog</title>
     <link>https://Mohammad-Alwan.github.io/website/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <description>Recent content on Alwan&#39;s Blog</description>
     <generator>Hugo -- 0.125.7</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 10 Dec 2024 16:17:48 +0700</lastBuildDate>
