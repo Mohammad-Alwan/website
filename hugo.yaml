@@ -1,6 +1,6 @@
 baseURL: https://Mohammad-Alwan.github.io/website/
 languageCode: en-us
-title: My New Hugo Site
+title: Alwan's Blog
 theme: PaperMod
 
 params:
@@ -18,9 +18,9 @@ params:
       url: ''
 
   assets:
-    favicon16x16: /assets/favicon-16x16.png
-    favicon32x32: /assets/favicon-32x32.png
-    apple_touch_icon: /assets/apple-touch-icon.png 
+    favicon16x16: /static/assets/favicon-16x16.png
+    favicon32x32: /static/assets/favicon-32x32.png
+    apple_touch_icon: /static/assets/apple-touch-icon.png 
   favicon: favicon.ico
 
 menu:
