@@ -4,5 +4,5 @@ draft: false
 title: Example
 ---
 example site
-![panel-admin](/images/panel-admin.png)
-<img src = "/panel-admin.png">
+![panel-admin](/post/example/panel-admin.png)
+
