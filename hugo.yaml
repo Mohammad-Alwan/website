@@ -1,3 +1,4 @@
+#baseURL: http://example.org/
 baseURL: https://Mohammad-Alwan.github.io/website/
 languageCode: en-us
 title: Alwan's Blog
@@ -34,3 +35,10 @@ menu:
     name: Blog
     url: /posts/
     weight: 20
+
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
+        title: true
