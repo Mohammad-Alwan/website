@@ -1,21 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Alwan&#39;s Blog</title>
-    <link>http://localhost:1313/website/</link>
-    <description>Recent content on Alwan&#39;s Blog</description>
-    <generator>Hugo -- 0.139.4</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 10 Dec 2024 16:17:48 +0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/website/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Deploy Aplikasi Blog Berita (Laravel) dengan GitLab CI/CD</title>
-      <link>http://localhost:1313/website/post/blog-berita/</link>
-      <pubDate>Tue, 10 Dec 2024 16:17:48 +0700</pubDate>
-      <guid>http://localhost:1313/website/post/blog-berita/</guid>
-      <description>&lt;p&gt;Halo, disini saya mau sharing langkah-langkah deploy aplikasi blog berita berbasis web dengan menggunakan CI/CD GitLab dengan executor GitLab Runner yaitu Docker. Aplikasi ini dibuat dengan framework laravel dan untuk database-nya menggunakan MySQL.&lt;/p&gt;
-&lt;p&gt;Aplikasi Sistem Informasi Blog Berita Berbasis Web ini dirancang dan dibangun untuk memudahkan operator dalam menyebarkan berita-berita terbaru secara cepat dan up-to-date.&lt;/p&gt;
-&lt;p&gt;Dari hasil testing, source code dari aplikasi ini berjalan dengan mulus tanpa kendala. Tampilan dari aplikasi moderndan layak untuk digunakan. Menurut saya aplikasi ini memiliki fitur yang sudah cukup lengkap untuk menunjang aplikasi sistem informasi blog dan berita berbasis website.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Alwan's Blog</title><link>https://Mohammad-Alwan.github.io/website/</link><description>Recent content on Alwan's Blog</description><generator>Hugo -- 0.139.4</generator><language>en-us</language><lastBuildDate>Tue, 10 Dec 2024 16:17:48 +0700</lastBuildDate><atom:link href="https://Mohammad-Alwan.github.io/website/index.xml" rel="self" type="application/rss+xml"/><item><title>Deploy Aplikasi Blog Berita (Laravel) dengan GitLab CI/CD</title><link>https://Mohammad-Alwan.github.io/website/post/blog-berita/</link><pubDate>Tue, 10 Dec 2024 16:17:48 +0700</pubDate><guid>https://Mohammad-Alwan.github.io/website/post/blog-berita/</guid><description>&lt;p>Halo, disini saya mau sharing langkah-langkah deploy aplikasi blog berita berbasis web dengan menggunakan CI/CD GitLab dengan executor GitLab Runner yaitu Docker. Aplikasi ini dibuat dengan framework laravel dan untuk database-nya menggunakan MySQL.&lt;/p>
+&lt;p>Aplikasi Sistem Informasi Blog Berita Berbasis Web ini dirancang dan dibangun untuk memudahkan operator dalam menyebarkan berita-berita terbaru secara cepat dan up-to-date.&lt;/p>
+&lt;p>Dari hasil testing, source code dari aplikasi ini berjalan dengan mulus tanpa kendala. Tampilan dari aplikasi moderndan layak untuk digunakan. Menurut saya aplikasi ini memiliki fitur yang sudah cukup lengkap untuk menunjang aplikasi sistem informasi blog dan berita berbasis website.&lt;/p></description></item></channel></rss>
