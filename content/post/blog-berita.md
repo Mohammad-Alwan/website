@@ -39,9 +39,11 @@ Dari hasil testing, source code dari aplikasi ini berjalan dengan mulus tanpa ke
 > -  Bridge adalah Network driver yang memungkinkan container untuk terhubung satu sama lain dan dengan host. 
 
 ### Arsitektur GitLab CI/CD executor docker yang digunakan
-![arsitektur-gitlab](/images/arsitektur-gitlab.png)
+![arsitektur-gitlab]({{ "/images/arsitektur-gitlab.png" | relURL }})
+
 
 Langsung saja untuk tutorialnya, Berikut langkah-langkahnya:
+
 
 1. Pertama teman-teman harus memiliki akun GitLab. Karena GitLab inilah yang akan digunakan untuk CI/CD nanti. Teman-teman sign-up jika belum memiliki akun atau bisa langsung sign-in jika sudah memiliki akun. Setelah itu, buat proyek kosong pada GitLab.
 
