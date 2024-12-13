@@ -34,15 +34,13 @@ Dari hasil testing, source code dari aplikasi ini berjalan dengan mulus tanpa ke
 - GitLab-Runner. ( [Install GitLab-Runner](https://docs.gitlab.com/runner/install/) )
 
 ### Topologi
-![Topologi](/images/test.png)
 ![Topologi](test.png)
-![Topologi](/test.png)
 
 > - Docker in Docker adalah konsep menjalankan Docker dalam Docker container. Atau lebih jelasnya adalah menjalankan Docker daemon di dalam Docker container. 
 > -  Bridge adalah Network driver yang memungkinkan container untuk terhubung satu sama lain dan dengan host. 
 
 ### Arsitektur GitLab CI/CD executor docker yang digunakan
-![arsitektur-gitlab]({{ "/images/arsitektur-gitlab.png" | absURL }})
+![arsitektur-gitlab](arsitektur-gitlab.png)
 
 
 Langsung saja untuk tutorialnya, Berikut langkah-langkahnya:
@@ -51,7 +49,7 @@ Langsung saja untuk tutorialnya, Berikut langkah-langkahnya:
 1. Pertama teman-teman harus memiliki akun GitLab. Karena GitLab inilah yang akan digunakan untuk CI/CD nanti. Teman-teman sign-up jika belum memiliki akun atau bisa langsung sign-in jika sudah memiliki akun. Setelah itu, buat proyek kosong pada GitLab.
 
 Pada menu GitLab klik **New Project** <span>&#8594;</span>  **Create blank Project** <span>&#8594;</span>  isi <span>&#8594;</span>  **Create Project**
-![create-project](/images/create-project.png)
+![create-project](create-project.png)
 
 2. Selain GitLab, teman-teman juga harus memiliki source code dari aplikasi tersebut untuk dideploy. Untuk itu teman-teman bisa donwload source code pada link [berikut](https://drive.google.com/file/d/1mK3_WhvYdBzUaPFvkBVimYUiS4ltpB2y/view) atau bisa langsung clone saja pada environment teman-teman.
 ```bash
@@ -222,11 +220,11 @@ git commit . -m "<messages>"
 >
 > MYSQL_PASSWORD - kata sandi (password) yang akan digunakan oleh user yang sudah dibuat.
 
-![variable](/images/variable.png)
+![variable](variable.png)
 
 14. Atur GitLab Runner dengan executor Docker. Caranya sebagai berikut:
 - **Project pada GitLab** <span>&#8594;</span> **Setting** <span>&#8594;</span> **CI/CD** <span>&#8594;</span> **Runners** <span>&#8594;</span> **Copy Registration token**
-![token](/images/token.png)
+![token](token.png)
 - Paste hasil copy pada GitLab tadi di terminal ke bagian setelah " --registration-token " pada perintah dibawah. Contohnya sebagai berikut:
 ```bash
 sudo gitlab-runner register -n --url <GitLab-URL> \
@@ -244,20 +242,20 @@ git push origin main
 16. Pastikan pipeline sudah running. Untuk itu cek dengan cara berikut:
 - **Project pada GitLab** <span>&#8594;</span> **Build** <span>&#8594;</span> **Pipelines**
 17. Pastikan juga pipeline berjalan dengan lancar dan berhasil. Jika berhasil maka statusnya akan berubah, dari "running" menjadi "passed". Untuk melihat proses berjalannya pipeline, bisa dilihat pada bagian **Jobs**. Dibawah ini adalah contoh pipeline sudah berhasil.
-![pipeline-hasil1](/images/pipeline-hasil1.png)
-![pipeline-hasil2](/images/pipeline-hasil2.png)
+![pipeline-hasil1](pipeline-hasil1.png)
+![pipeline-hasil2](pipeline-hasil2.png)
 
 18. Pastikan juga pada terminal teman-teman status dari Container adalah running. Cek dengan menggunakan perintah berikut:
 ```bash
 docker ps	
 ```
-![docker-ps](/images/docker-ps.png)
+![docker-ps](docker-ps.png)
 
 19. Lakukan tunneling dan cek pada port 8000.
-![hasil-berita](/images/hasil-berita.png)
+![hasil-berita](hasil-berita.png)
 
 20. Login menggunakan:
 	- Email : admin@gmail.com
 	- Password : admin123
-![login](/images/login.png)
-![panel-admin](./panel-admin.png)
+![login](login.png)
+![panel-admin](panel-admin.png)
