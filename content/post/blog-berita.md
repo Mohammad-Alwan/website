@@ -35,8 +35,6 @@ Dari hasil testing, source code dari aplikasi ini berjalan dengan mulus tanpa ke
 
 ### Topologi
 ![Topologi](./images/test.png)
-![Topologi-1](test.png)
-![Topologi-2](/test.png)
 > - Docker in Docker adalah konsep menjalankan Docker dalam Docker container. Atau lebih jelasnya adalah menjalankan Docker daemon di dalam Docker container. 
 > -  Bridge adalah Network driver yang memungkinkan container untuk terhubung satu sama lain dan dengan host. 
 
