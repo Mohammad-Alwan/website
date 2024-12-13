@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/website/</loc>
     <lastmod>2024-12-10T16:17:48+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/blog-berita/</loc>
+    <loc>http://localhost:1313/website/post/blog-berita/</loc>
     <lastmod>2024-12-10T16:17:48+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>http://localhost:1313/website/post/</loc>
     <lastmod>2024-12-10T16:17:48+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:1313/website/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:1313/website/tags/</loc>
   </url>
 </urlset>

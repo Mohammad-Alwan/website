@@ -1,5 +1,5 @@
-baseURL: http://example.org/
-#baseURL: https://Mohammad-Alwan.github.io/website/
+#baseURL: http://example.org/
+baseURL: https://Mohammad-Alwan.github.io/website/
 languageCode: en-us
 title: Alwan's Blog
 theme: PaperMod
