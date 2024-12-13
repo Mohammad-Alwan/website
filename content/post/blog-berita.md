@@ -8,7 +8,7 @@ Halo, disini saya mau sharing langkah-langkah deploy aplikasi blog berita berbas
 
 Aplikasi Sistem Informasi Blog Berita Berbasis Web ini dirancang dan dibangun untuk memudahkan operator dalam menyebarkan berita-berita terbaru secara cepat dan up-to-date.
 
-Dari hasil testing, source code dari aplikasi ini berjalan dengan mulus tanpa kendala. Tampilan dari aplikasi moderndan layak untuk digunakan. Menurut saya aplikasi ini memiliki fitur yang sudah cukup lengkap untuk menunjang aplikasi sistem informasi blog dan berita berbasis website.
+Dari hasil testing, source code dari aplikasi ini berjalan dengan mulus tanpa kendala. Tampilan dari aplikasi modern dan layak untuk digunakan. Menurut saya aplikasi ini memiliki fitur yang sudah cukup lengkap untuk menunjang aplikasi sistem informasi blog dan berita berbasis website.
 
 ### Screenshot Aplikasi
 ![blog berita image](blog-berita.png)
@@ -65,6 +65,7 @@ Pada menu GitLab klik **New Project** <span>&#8594;</span>  **Create blank Proje
    ```bash
    7z x aplikasi-blog-berita-berbasis-web-laravel.7z
    ```
+   Jika sudah maka akan terlihat beberapa file dan direktori yang tersedia setelah proses ekstrak tadi. Kita akan berfokus pada dua direktori yaitu direktori blog dan direktori database. Langsung saja teman-teman pindah saja file "blog.sql" dalam direktori database ke direktori blog. Karena file tersebut adalah dump.sql yang akan digunakan pada database. Lakukan step ini karena step ini akan berkaitan dengan step-step berikutnya
 
 5. Untuk pindah file lakukan perintah seperti berikut:
    ```bash
@@ -77,6 +78,8 @@ Pada menu GitLab klik **New Project** <span>&#8594;</span>  **Create blank Proje
     ```
 
 7. Hubungkan repository lokal dengan repository (project) pada GitLab yang pada step awal sudah dibuat. Tadi pada saat awal kita clone untuk mendapatkan source code, maka remote repository kita akan ke mengarah ke github. Karena kita akan menggunakan GitLab, ubah remote repository ke project GitLab. Untuk itu copy/salin url repository di GitLab dengan cara masuk ke **project yang sudah dibuat** <span>&#8594;</span> **Clone** <span>&#8594;</span> **Copy** url http.
+![remote](git-remote.png)  
+
    ```bash
    git remote set-url origin <URL>
    ```
@@ -242,7 +245,9 @@ Pada menu GitLab klik **New Project** <span>&#8594;</span>  **Create blank Proje
     ```
 16. Pastikan pipeline sudah running. Untuk itu cek dengan cara berikut:
 - **Project pada GitLab** <span>&#8594;</span> **Build** <span>&#8594;</span> **Pipelines**
-17. Pastikan juga pipeline berjalan dengan lancar dan berhasil. Jika berhasil maka statusnya akan berubah, dari "running" menjadi "passed". Untuk melihat proses berjalannya pipeline, bisa dilihat pada bagian **Jobs**. Dibawah ini adalah contoh pipeline sudah berhasil.
+    ![pipeline-running](pipeline-running.png)
+
+17. Pastikan juga pipeline berjalan dengan lancar dan berhasil. Jika berhasil maka statusnya akan berubah, dari **running** menjadi **passed**. Untuk melihat proses berjalannya pipeline, bisa dilihat pada bagian **Jobs**. Dibawah ini adalah contoh pipeline sudah berhasil.
 ![pipeline-hasil1](pipeline-hasil1.png)
 ![pipeline-hasil2](pipeline-hasil2.png)
 
