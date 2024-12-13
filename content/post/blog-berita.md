@@ -11,7 +11,7 @@ Aplikasi Sistem Informasi Blog Berita Berbasis Web ini dirancang dan dibangun un
 Dari hasil testing, source code dari aplikasi ini berjalan dengan mulus tanpa kendala. Tampilan dari aplikasi moderndan layak untuk digunakan. Menurut saya aplikasi ini memiliki fitur yang sudah cukup lengkap untuk menunjang aplikasi sistem informasi blog dan berita berbasis website.
 
 ### Screenshot Aplikasi
-![blog berita image](/images/blog-berita.png)
+![blog berita image](./images/blog-berita.png)
 
 
 ### Fitur Aplikasi
@@ -255,4 +255,4 @@ docker ps
 	- Email : admin@gmail.com
 	- Password : admin123
 ![login](/images/login.png)
-![panel-admin](/post/images/panel-admin.png)
+![panel-admin](./panel-admin.png)
