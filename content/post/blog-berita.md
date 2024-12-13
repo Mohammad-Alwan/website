@@ -11,7 +11,7 @@ Aplikasi Sistem Informasi Blog Berita Berbasis Web ini dirancang dan dibangun un
 Dari hasil testing, source code dari aplikasi ini berjalan dengan mulus tanpa kendala. Tampilan dari aplikasi moderndan layak untuk digunakan. Menurut saya aplikasi ini memiliki fitur yang sudah cukup lengkap untuk menunjang aplikasi sistem informasi blog dan berita berbasis website.
 
 ### Screenshot Aplikasi
-![blog berita image](./images/blog-berita.png)
+![blog berita image](https://mohammad-alwan.github.io/website/images/blog-berita.png)
 
 
 ### Fitur Aplikasi
