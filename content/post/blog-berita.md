@@ -34,12 +34,12 @@ Dari hasil testing, source code dari aplikasi ini berjalan dengan mulus tanpa ke
 - GitLab-Runner. ( [Install GitLab-Runner](https://docs.gitlab.com/runner/install/) )
 
 ### Topologi
-![Topologi](./images/test.png)
+![Topologi](/images/test.png)
 > - Docker in Docker adalah konsep menjalankan Docker dalam Docker container. Atau lebih jelasnya adalah menjalankan Docker daemon di dalam Docker container. 
 > -  Bridge adalah Network driver yang memungkinkan container untuk terhubung satu sama lain dan dengan host. 
 
 ### Arsitektur GitLab CI/CD executor docker yang digunakan
-![arsitektur-gitlab](/images/arsitektur-gitlab.png)
+![arsitektur-gitlab]({{ "/images/arsitektur-gitlab.png" | absURL }})
 
 
 Langsung saja untuk tutorialnya, Berikut langkah-langkahnya:
