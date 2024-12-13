@@ -255,5 +255,4 @@ docker ps
 	- Email : admin@gmail.com
 	- Password : admin123
 ![login](/images/login.png)
-![panel-admin](content/post/images/panel-admin.png)
-
+![panel-admin](/post/images/panel-admin.png)
