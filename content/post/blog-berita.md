@@ -1,5 +1,5 @@
 ---
-date: '2024-12-10T16:17:48+07:00'
+date: '2023-12-28T16:17:48+07:00'
 draft: false
 title: Deploy Aplikasi Blog Berita (Laravel) dengan GitLab CI/CD
 ShowToc: true
