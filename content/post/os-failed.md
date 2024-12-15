@@ -14,12 +14,12 @@ df -TH
 Observe disk usage with a percentage usage of up to 100%. 
 > **In this case I found that _/var/log/audit_ was full.**
 
-2. Free up space for the /var/log/audit/ partition and reboot the node
+2. Free up space for the _/var/log/audit/_ partition and reboot the node
 ```bash
 sudo rm -f /var/log/audit/audit.log.*
 ```
 
-3. Change Audit Rules Configuration to prevent the system halt when the /var/log/audit/ full
+3. Change Audit Rules Configuration to prevent the system halt when the _/var/log/audit/_ full
 ```bash
 vi /etc/audit/auditd.conf
 ```
