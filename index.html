@@ -154,7 +154,7 @@
   <div class="entry-content">
     <p>Issue The RHEL operating system cannot boot normally, experiencing a stuck state due to a mount error /sysroot: can&#39;t read superblock on /dev/mapper/os-lv_root. Troubleshooting Steps Boot into rescue mode How to boot RHEL to Rescue Mode
 Extend LV /dev/mapper/os-lv_root menjadi 125G
-lvextend -L 125G /dev/mapper/os-lv_root Resize the filesystem by using the xfs_growfs command
+vgchange -ay lvextend -L 125G /dev/mapper/os-lv_root Resize the filesystem by using the xfs_growfs command
 Note ❗
 You need to confirm the filesystem type you’re using
 xfs_growfs /dev/mapper/os-lv_root Root Cause The system requires 80G on the root LV (dev/mapper/os-lv_root), but the root LV is only 71G in size....</p>

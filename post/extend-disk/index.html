@@ -9,7 +9,7 @@
 <meta name="keywords" content="">
 <meta name="description" content="Issue The RHEL operating system cannot boot normally, experiencing a stuck state due to a mount error /sysroot: can&#39;t read superblock on /dev/mapper/os-lv_root. Troubleshooting Steps Boot into rescue mode How to boot RHEL to Rescue Mode
 Extend LV /dev/mapper/os-lv_root menjadi 125G
-lvextend -L 125G /dev/mapper/os-lv_root Resize the filesystem by using the xfs_growfs command
+vgchange -ay lvextend -L 125G /dev/mapper/os-lv_root Resize the filesystem by using the xfs_growfs command
 Note ❗
 You need to confirm the filesystem type you&rsquo;re using
 xfs_growfs /dev/mapper/os-lv_root Root Cause The system requires 80G on the root LV (dev/mapper/os-lv_root), but the root LV is only 71G in size.">
@@ -40,7 +40,7 @@ xfs_growfs /dev/mapper/os-lv_root Root Cause The system requires 80G on the root
   <meta property="og:title" content="RHEL OS cannot boot normally (/sysroot: can&#39;t read superblock)">
   <meta property="og:description" content="Issue The RHEL operating system cannot boot normally, experiencing a stuck state due to a mount error /sysroot: can&#39;t read superblock on /dev/mapper/os-lv_root. Troubleshooting Steps Boot into rescue mode How to boot RHEL to Rescue Mode
 Extend LV /dev/mapper/os-lv_root menjadi 125G
-lvextend -L 125G /dev/mapper/os-lv_root Resize the filesystem by using the xfs_growfs command
+vgchange -ay lvextend -L 125G /dev/mapper/os-lv_root Resize the filesystem by using the xfs_growfs command
 Note ❗
 You need to confirm the filesystem type you’re using
 xfs_growfs /dev/mapper/os-lv_root Root Cause The system requires 80G on the root LV (dev/mapper/os-lv_root), but the root LV is only 71G in size.">
@@ -53,7 +53,7 @@ xfs_growfs /dev/mapper/os-lv_root Root Cause The system requires 80G on the root
 <meta name="twitter:title" content="RHEL OS cannot boot normally (/sysroot: can&#39;t read superblock)">
 <meta name="twitter:description" content="Issue The RHEL operating system cannot boot normally, experiencing a stuck state due to a mount error /sysroot: can&#39;t read superblock on /dev/mapper/os-lv_root. Troubleshooting Steps Boot into rescue mode How to boot RHEL to Rescue Mode
 Extend LV /dev/mapper/os-lv_root menjadi 125G
-lvextend -L 125G /dev/mapper/os-lv_root Resize the filesystem by using the xfs_growfs command
+vgchange -ay lvextend -L 125G /dev/mapper/os-lv_root Resize the filesystem by using the xfs_growfs command
 Note ❗
 You need to confirm the filesystem type you&rsquo;re using
 xfs_growfs /dev/mapper/os-lv_root Root Cause The system requires 80G on the root LV (dev/mapper/os-lv_root), but the root LV is only 71G in size.">
@@ -85,12 +85,12 @@ xfs_growfs /dev/mapper/os-lv_root Root Cause The system requires 80G on the root
   "@type": "BlogPosting",
   "headline": "RHEL OS cannot boot normally (/sysroot: can't read superblock)",
   "name": "RHEL OS cannot boot normally (\/sysroot: can\u0027t read superblock)",
-  "description": "Issue The RHEL operating system cannot boot normally, experiencing a stuck state due to a mount error /sysroot: can't read superblock on /dev/mapper/os-lv_root. Troubleshooting Steps Boot into rescue mode How to boot RHEL to Rescue Mode\nExtend LV /dev/mapper/os-lv_root menjadi 125G\nlvextend -L 125G /dev/mapper/os-lv_root Resize the filesystem by using the xfs_growfs command\nNote ❗\nYou need to confirm the filesystem type you\u0026rsquo;re using\nxfs_growfs /dev/mapper/os-lv_root Root Cause The system requires 80G on the root LV (dev/mapper/os-lv_root), but the root LV is only 71G in size.",
+  "description": "Issue The RHEL operating system cannot boot normally, experiencing a stuck state due to a mount error /sysroot: can't read superblock on /dev/mapper/os-lv_root. Troubleshooting Steps Boot into rescue mode How to boot RHEL to Rescue Mode\nExtend LV /dev/mapper/os-lv_root menjadi 125G\nvgchange -ay lvextend -L 125G /dev/mapper/os-lv_root Resize the filesystem by using the xfs_growfs command\nNote ❗\nYou need to confirm the filesystem type you\u0026rsquo;re using\nxfs_growfs /dev/mapper/os-lv_root Root Cause The system requires 80G on the root LV (dev/mapper/os-lv_root), but the root LV is only 71G in size.",
   "keywords": [
     
   ],
-  "articleBody": "Issue The RHEL operating system cannot boot normally, experiencing a stuck state due to a mount error /sysroot: can't read superblock on /dev/mapper/os-lv_root. Troubleshooting Steps Boot into rescue mode How to boot RHEL to Rescue Mode\nExtend LV /dev/mapper/os-lv_root menjadi 125G\nlvextend -L 125G /dev/mapper/os-lv_root Resize the filesystem by using the xfs_growfs command\nNote ❗\nYou need to confirm the filesystem type you’re using\nxfs_growfs /dev/mapper/os-lv_root Root Cause The system requires 80G on the root LV (dev/mapper/os-lv_root), but the root LV is only 71G in size.\n",
-  "wordCount" : "86",
+  "articleBody": "Issue The RHEL operating system cannot boot normally, experiencing a stuck state due to a mount error /sysroot: can't read superblock on /dev/mapper/os-lv_root. Troubleshooting Steps Boot into rescue mode How to boot RHEL to Rescue Mode\nExtend LV /dev/mapper/os-lv_root menjadi 125G\nvgchange -ay lvextend -L 125G /dev/mapper/os-lv_root Resize the filesystem by using the xfs_growfs command\nNote ❗\nYou need to confirm the filesystem type you’re using\nxfs_growfs /dev/mapper/os-lv_root Root Cause The system requires 80G on the root LV (dev/mapper/os-lv_root), but the root LV is only 71G in size.\n",
+  "wordCount" : "88",
   "inLanguage": "en",
   "datePublished": "2025-12-17T16:17:48+07:00",
   "dateModified": "2025-12-17T16:17:48+07:00",
@@ -201,7 +201,8 @@ xfs_growfs /dev/mapper/os-lv_root Root Cause The system requires 80G on the root
 </li>
 <li>
 <p>Extend LV /dev/mapper/os-lv_root menjadi 125G</p>
-<pre tabindex="0"><code>lvextend -L 125G /dev/mapper/os-lv_root
+<pre tabindex="0"><code>vgchange -ay
+lvextend -L 125G /dev/mapper/os-lv_root
 </code></pre></li>
 <li>
 <p>Resize the filesystem by using the xfs_growfs command</p>
