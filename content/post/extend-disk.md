@@ -17,6 +17,7 @@ The RHEL operating system cannot boot normally, experiencing a stuck state due t
    
 2. Extend LV /dev/mapper/os-lv_root menjadi 125G
    ```
+   vgchange -ay
    lvextend -L 125G /dev/mapper/os-lv_root
    ```
 
