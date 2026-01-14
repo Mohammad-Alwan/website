@@ -148,6 +148,23 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">RHEL OS cannot boot normally (/sysroot: can&#39;t read superblock)
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Issue The RHEL operating system cannot boot normally, experiencing a stuck state due to a mount error /sysroot: can&#39;t read superblock on /dev/mapper/os-lv_root. Troubleshooting Steps Boot into rescue mode How to boot RHEL to Rescue Mode
+Extend LV /dev/mapper/os-lv_root menjadi 125G
+lvextend -L 125G /dev/mapper/os-lv_root Resize the filesystem by using the xfs_growfs command
+Note ❗
+You need to confirm the filesystem type you’re using
+xfs_growfs /dev/mapper/os-lv_root Root Cause The system requires 80G on the root LV (dev/mapper/os-lv_root), but the root LV is only 71G in size....</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-12-17 16:17:48 +0700 +0700'>December 17, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to RHEL OS cannot boot normally (/sysroot: can&#39;t read superblock)" href="https://Mohammad-Alwan.github.io/website/post/extend-disk/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">RHEL OS failed to boot, got stuck (crowdstrike service) and the OS shut down immediately
     </h2>
   </header>
