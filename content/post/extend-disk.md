@@ -7,7 +7,7 @@ ShowToc: true
 
 ### Issue
 The RHEL operating system cannot boot normally, experiencing a stuck state due to a mount error `/sysroot: can't read superblock on /dev/mapper/os-lv_root.`
-![issue-1](issue-1.png)
+![issue-2](issue-2.png)
 ![extend-disk1](extend-disk1.jpeg)
 ![extend-disk2](extend-disk2.jpeg)
 
