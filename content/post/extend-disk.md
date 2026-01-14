@@ -1,7 +1,7 @@
 ---
 date: '2025-12-17T16:17:48+07:00'
 draft: false
-title: RHEL OS cannot boot normally (/sysroot: can't read superblock)
+title: "RHEL OS cannot boot normally (/sysroot: can't read superblock)"
 ShowToc: true
 ---
 
