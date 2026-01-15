@@ -38,5 +38,12 @@ In this case I found that /var/log/audit was full.</description>
 Aplikasi Sistem Informasi Blog Berita Berbasis Web ini dirancang dan dibangun untuk memudahkan operator dalam menyebarkan berita-berita terbaru secara cepat dan up-to-date.
 Dari hasil testing, source code dari aplikasi ini berjalan dengan mulus tanpa kendala. Tampilan dari aplikasi modern dan layak untuk digunakan.</description>
     </item>
+    <item>
+      <title>Inventory Pending Delete Ansible Automation Platform</title>
+      <link>https://Mohammad-Alwan.github.io/website/post/pending-ansible/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Mohammad-Alwan.github.io/website/post/pending-ansible/</guid>
+      <description>Load Django Shell sudo awx-manage shell_plus Display inventory from awx.main.models import Inventory Inventory.objects.all() Delete inventory based on id Inventory.objects.filter(id=168).delete() Display inventory &amp;ldquo;pending delete&amp;rdquo; Inventory.objects.filter(pending_deletion=True) </description>
+    </item>
   </channel>
 </rss>
