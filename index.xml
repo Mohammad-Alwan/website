@@ -6,8 +6,17 @@
     <description>Recent content on Alwan&#39;s Blog</description>
     <generator>Hugo -- 0.125.7</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Dec 2025 16:17:48 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 01 Jan 2026 16:17:48 +0700</lastBuildDate>
     <atom:link href="https://Mohammad-Alwan.github.io/website/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Update SSL</title>
+      <link>https://Mohammad-Alwan.github.io/website/post/update-ssl/</link>
+      <pubDate>Thu, 01 Jan 2026 16:17:48 +0700</pubDate>
+      <guid>https://Mohammad-Alwan.github.io/website/post/update-ssl/</guid>
+      <description>Update SSL note ❗
+This is an example for server that uses the httpd service listens on port 443.
+Action to check expired certificates site=&amp;#34;&amp;lt;ip-server&amp;gt;&amp;#34; ; port=&amp;#34;443&amp;#34; ;echo | openssl s_client -servername $site -connect $site:$port | openssl x509 -noout -dates SCP Cert from Local to Target scp -r /path/to/source/ user@&amp;lt;server&amp;gt;:/path/to/target Create Backup Cert cd /etc/ssl mkdir ssl_backup cp -pfv &amp;lt;current-cert&amp;gt; ssl_backup/ Change the Old Certificate to the New One Note ❗</description>
+    </item>
     <item>
       <title>RHEL OS cannot boot normally (/sysroot: can&#39;t read superblock)</title>
       <link>https://Mohammad-Alwan.github.io/website/post/extend-disk/</link>
@@ -19,6 +28,13 @@ vgchange -ay lvextend -L 125G /dev/mapper/os-lv_root Resize the filesystem by us
 Note ❗
 You need to confirm the filesystem type you&amp;rsquo;re using
 xfs_growfs /dev/mapper/os-lv_root Root Cause The system requires 80G on the root LV (dev/mapper/os-lv_root), but the root LV is only 71G in size.</description>
+    </item>
+    <item>
+      <title>Inventory Pending Deletion in Ansible Automation Platform</title>
+      <link>https://Mohammad-Alwan.github.io/website/post/pending-ansible/</link>
+      <pubDate>Fri, 05 Dec 2025 16:17:48 +0700</pubDate>
+      <guid>https://Mohammad-Alwan.github.io/website/post/pending-ansible/</guid>
+      <description>Load Django Shell sudo awx-manage shell_plus Display inventory from awx.main.models import Inventory Inventory.objects.all() Delete inventory based on id Inventory.objects.filter(id=168).delete() Display inventory (pending delete) Inventory.objects.filter(pending_deletion=True) </description>
     </item>
     <item>
       <title>RHEL OS failed to boot, got stuck (crowdstrike service) and the OS shut down immediately</title>
@@ -37,13 +53,6 @@ In this case I found that /var/log/audit was full.</description>
       <description>Halo, disini saya mau sharing langkah-langkah deploy aplikasi blog berita berbasis web dengan menggunakan CI/CD GitLab dengan executor GitLab Runner yaitu Docker. Aplikasi ini dibuat dengan framework laravel dan untuk database-nya menggunakan MySQL.
 Aplikasi Sistem Informasi Blog Berita Berbasis Web ini dirancang dan dibangun untuk memudahkan operator dalam menyebarkan berita-berita terbaru secara cepat dan up-to-date.
 Dari hasil testing, source code dari aplikasi ini berjalan dengan mulus tanpa kendala. Tampilan dari aplikasi modern dan layak untuk digunakan.</description>
-    </item>
-    <item>
-      <title>Inventory Pending Delete Ansible Automation Platform</title>
-      <link>https://Mohammad-Alwan.github.io/website/post/pending-ansible/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://Mohammad-Alwan.github.io/website/post/pending-ansible/</guid>
-      <description>Load Django Shell sudo awx-manage shell_plus Display inventory from awx.main.models import Inventory Inventory.objects.all() Delete inventory based on id Inventory.objects.filter(id=168).delete() Display inventory &amp;ldquo;pending delete&amp;rdquo; Inventory.objects.filter(pending_deletion=True) </description>
     </item>
   </channel>
 </rss>

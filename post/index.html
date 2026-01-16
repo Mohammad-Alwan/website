@@ -115,6 +115,20 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Update SSL
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Update SSL note ❗
+This is an example for server that uses the httpd service listens on port 443.
+Action to check expired certificates site=&#34;&lt;ip-server&gt;&#34; ; port=&#34;443&#34; ;echo | openssl s_client -servername $site -connect $site:$port | openssl x509 -noout -dates SCP Cert from Local to Target scp -r /path/to/source/ user@&lt;server&gt;:/path/to/target Create Backup Cert cd /etc/ssl mkdir ssl_backup cp -pfv &lt;current-cert&gt; ssl_backup/ Change the Old Certificate to the New One Note ❗...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-01-01 16:17:48 +0700 +0700'>January 1, 2026</span></footer>
+  <a class="entry-link" aria-label="post link to Update SSL" href="https://Mohammad-Alwan.github.io/website/post/update-ssl/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">RHEL OS cannot boot normally (/sysroot: can&#39;t read superblock)
     </h2>
   </header>
@@ -128,6 +142,18 @@ xfs_growfs /dev/mapper/os-lv_root Root Cause The system requires 80G on the root
   </div>
   <footer class="entry-footer"><span title='2025-12-17 16:17:48 +0700 +0700'>December 17, 2025</span></footer>
   <a class="entry-link" aria-label="post link to RHEL OS cannot boot normally (/sysroot: can&#39;t read superblock)" href="https://Mohammad-Alwan.github.io/website/post/extend-disk/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Inventory Pending Deletion in Ansible Automation Platform
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Load Django Shell sudo awx-manage shell_plus Display inventory from awx.main.models import Inventory Inventory.objects.all() Delete inventory based on id Inventory.objects.filter(id=168).delete() Display inventory (pending delete) Inventory.objects.filter(pending_deletion=True) </p>
+  </div>
+  <footer class="entry-footer"><span title='2025-12-05 16:17:48 +0700 +0700'>December 5, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to Inventory Pending Deletion in Ansible Automation Platform" href="https://Mohammad-Alwan.github.io/website/post/pending-ansible/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -156,18 +182,6 @@ Dari hasil testing, source code dari aplikasi ini berjalan dengan mulus tanpa ke
   </div>
   <footer class="entry-footer"><span title='2023-12-28 16:17:48 +0700 +0700'>December 28, 2023</span></footer>
   <a class="entry-link" aria-label="post link to Deploy Aplikasi Blog Berita (Laravel) dengan GitLab CI/CD" href="https://Mohammad-Alwan.github.io/website/post/blog-berita/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Inventory Pending Delete Ansible Automation Platform
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Load Django Shell sudo awx-manage shell_plus Display inventory from awx.main.models import Inventory Inventory.objects.all() Delete inventory based on id Inventory.objects.filter(id=168).delete() Display inventory “pending delete” Inventory.objects.filter(pending_deletion=True) </p>
-  </div>
-  <footer class="entry-footer"></footer>
-  <a class="entry-link" aria-label="post link to Inventory Pending Delete Ansible Automation Platform" href="https://Mohammad-Alwan.github.io/website/post/pending-ansible/"></a>
 </article>
     </main>
     
