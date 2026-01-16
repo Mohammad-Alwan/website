@@ -119,9 +119,9 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>Update SSL note ❗
-This is an example for server that uses the httpd service listens on port 443.
-Action to check expired certificates site=&#34;&lt;ip-server&gt;&#34; ; port=&#34;443&#34; ;echo | openssl s_client -servername $site -connect $site:$port | openssl x509 -noout -dates SCP Cert from Local to Target scp -r /path/to/source/ user@&lt;server&gt;:/path/to/target Create Backup Cert cd /etc/ssl mkdir ssl_backup cp -pfv &lt;current-cert&gt; ssl_backup/ Change the Old Certificate to the New One Note ❗...</p>
+    <p>Update SSL note❗: This is an example for server that uses the httpd service listens on port 443.
+Action to check expired certificates site=&#34;&lt;ip-server&gt;&#34; ; port=&#34;443&#34; ;echo | openssl s_client -servername $site -connect $site:$port | openssl x509 -noout -dates SCP Cert from Local to Target scp -r /path/to/source/ user@&lt;server&gt;:/path/to/target Create Backup Cert Note ❗: In this example, the SSL httpd service configuration uses the certificate in /etc/ssl/.
+cd /etc/ssl mkdir ssl_backup cp -pfv &lt;current-cert&gt; ssl_backup/ Change the Old Certificate to the New One Note❗: The source path is taken from the previous SCP result....</p>
   </div>
   <footer class="entry-footer"><span title='2026-01-01 16:17:48 +0700 +0700'>January 1, 2026</span></footer>
   <a class="entry-link" aria-label="post link to Update SSL" href="https://Mohammad-Alwan.github.io/website/post/update-ssl/"></a>

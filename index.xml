@@ -13,9 +13,9 @@
       <link>https://Mohammad-Alwan.github.io/website/post/update-ssl/</link>
       <pubDate>Thu, 01 Jan 2026 16:17:48 +0700</pubDate>
       <guid>https://Mohammad-Alwan.github.io/website/post/update-ssl/</guid>
-      <description>Update SSL note ❗
-This is an example for server that uses the httpd service listens on port 443.
-Action to check expired certificates site=&amp;#34;&amp;lt;ip-server&amp;gt;&amp;#34; ; port=&amp;#34;443&amp;#34; ;echo | openssl s_client -servername $site -connect $site:$port | openssl x509 -noout -dates SCP Cert from Local to Target scp -r /path/to/source/ user@&amp;lt;server&amp;gt;:/path/to/target Create Backup Cert cd /etc/ssl mkdir ssl_backup cp -pfv &amp;lt;current-cert&amp;gt; ssl_backup/ Change the Old Certificate to the New One Note ❗</description>
+      <description>Update SSL note❗: This is an example for server that uses the httpd service listens on port 443.
+Action to check expired certificates site=&amp;#34;&amp;lt;ip-server&amp;gt;&amp;#34; ; port=&amp;#34;443&amp;#34; ;echo | openssl s_client -servername $site -connect $site:$port | openssl x509 -noout -dates SCP Cert from Local to Target scp -r /path/to/source/ user@&amp;lt;server&amp;gt;:/path/to/target Create Backup Cert Note ❗: In this example, the SSL httpd service configuration uses the certificate in /etc/ssl/.
+cd /etc/ssl mkdir ssl_backup cp -pfv &amp;lt;current-cert&amp;gt; ssl_backup/ Change the Old Certificate to the New One Note❗: The source path is taken from the previous SCP result.</description>
     </item>
     <item>
       <title>RHEL OS cannot boot normally (/sysroot: can&#39;t read superblock)</title>
