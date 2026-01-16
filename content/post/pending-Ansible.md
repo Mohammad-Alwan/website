@@ -1,28 +1,28 @@
 ---
-date: '2025-12-5T16:17:48+07:00'
+date: '2025-12-05T16:17:48+07:00'
 draft: false
-title: "Inventory Pending Delete Ansible Automation Platform"
+title: "Inventory Pending Deletion in Ansible Automation Platform"
 ShowToc: true
 ---
 
-## Load Django Shell
+### Load Django Shell
 ```
 sudo awx-manage shell_plus
 ```
 
-## Display inventory
+### Display inventory
 ```
 from awx.main.models import Inventory
 ```
 ```
 Inventory.objects.all()
 ```
-## Delete inventory based on id
+### Delete inventory based on id
 ```
 Inventory.objects.filter(id=168).delete()
 ```
 
-## Display inventory "pending delete"
+### Display inventory (pending delete)
 ```
 Inventory.objects.filter(pending_deletion=True)
 ```
