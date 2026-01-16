@@ -6,9 +6,7 @@ ShowToc: true
 ---
 
 ## Update SSL 
-note ❗
-
-This is an example for server that uses the httpd service listens on port 443.
+note❗: This is an example for server that uses the httpd service listens on port 443.
 
 ### Action to check expired certificates
 ```
@@ -21,6 +19,7 @@ scp -r /path/to/source/ user@<server>:/path/to/target
 ```
 
 ### Create Backup Cert
+Note ❗: In this example, the SSL httpd service configuration uses the certificate in /etc/ssl/.
 ```
 cd /etc/ssl
 mkdir ssl_backup
@@ -28,9 +27,7 @@ cp -pfv <current-cert> ssl_backup/
 ```
 
 ### Change the Old Certificate to the New One
-Note ❗
-
-The source path is taken from the previous SCP result.
+Note❗: The source path is taken from the previous SCP result.
 ```
 sudo cp -v path/to/source /etc/ssl/
 ```
