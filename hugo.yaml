@@ -7,7 +7,7 @@ theme: PaperMod
 params:
   defaultTheme: dark
   homeInfoParams:
-    Title: "Posts >_"
+    Title: "Posts \U+1F4CC"
     Content: >
       This is my notes space - random findings, troubleshooting ,experiments, and things I don’t want to forget.      
   socialIcons:
