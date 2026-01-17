@@ -9,7 +9,7 @@ params:
   homeInfoParams:
     Title: "Posts \U+1F4CC"
     Content: >
-      This is my notes space - random findings, troubleshooting ,experiments, and things I don’t want to forget.      
+      This is my notes space - random findings, troubleshooting, experiments, and things I don’t want to forget.      
   socialIcons:
     - name: linkedin
       url: 'https://www.linkedin.com/in/mohammad-alwan-252454280/'
